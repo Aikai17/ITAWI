@@ -13,4 +13,6 @@ Image To ASCII With Interface - used to convert images to ASCII symbols with GUI
   make
   ```
 ## Usage
-![](.github/demo/appDemo.gif")
+![](.github/demo/appDemo.gif)
+![](.github/demo/claymore.png)
+![](.github/demo/gsword.png)
