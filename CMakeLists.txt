@@ -14,11 +14,11 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Concurrent)
 
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        asciiimage.cpp
-        asciiimage.h
+        src/main.cpp
+        src/mainwindow.cpp
+        src/mainwindow.h
+        src/asciiimage.cpp
+        src/asciiimage.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -40,8 +40,8 @@ else()
     else()
         add_executable(ImageToASCII
             ${PROJECT_SOURCES}
-            asciiimage.h asciiimage.cpp
-            mainwindow.h mainwindow.cpp
+            src/asciiimage.h src/asciiimage.cpp
+            src/mainwindow.h src/mainwindow.cpp
 
         )
     endif()
